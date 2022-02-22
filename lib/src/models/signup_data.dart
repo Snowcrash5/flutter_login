@@ -20,7 +20,7 @@ class SignupData {
     this.termsOfService = const [],
   })  : name = null,
         password = null,
-        customLoginData = null;
+        customLoginData = {} as Map<String, String>;
 
   @override
   bool operator ==(Object other) {

@@ -99,6 +99,7 @@ class _ConfirmSignupCardState extends State<_ConfirmSignupCard>
     final error = await auth.onResendCode!(SignupData.fromSignupForm(
         name: auth.email,
         password: auth.password,
+        customLoginData: auth.customLoginData,
         termsOfService: auth.getTermsOfServiceResults()));
 
     if (error != null) {
